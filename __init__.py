@@ -3,10 +3,10 @@
 import json
 import urllib.request
 import os
-from TBA.exceptions import APIUnavailableError
-from TBA.exceptions import ResourceUnavailableError
-from TBA.exceptions import UnexpectedDataError
-from TBA.exceptions import APPIDNotSetError
+from TBApython.exceptions import APIUnavailableError
+from TBApython.exceptions import ResourceUnavailableError
+from TBApython.exceptions import UnexpectedDataError
+from TBApython.exceptions import APPIDNotSetError
 
 API_URL = 'http://www.thebluealliance.com/api/v2/'
 

@@ -2,9 +2,9 @@
 Alliance API
 """
 
-from TBA import API_URL
-from TBA import get_data
-from TBA.exceptions import MatchFormattingError
+from TBApython import API_URL
+from TBApython import get_data
+from TBApython.exceptions import MatchFormattingError
 
 class Match:
     """Model for match information from The Blue Alliance

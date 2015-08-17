@@ -2,10 +2,10 @@
 Alliance API
 """
 
-from TBA import API_URL
-from TBA import get_data
-from TBA.exceptions import TeamFormattingError
-from TBA.exceptions import YearsParticipatedFormattingError
+from TBApython import API_URL
+from TBApython import get_data
+from TBApython.exceptions import TeamFormattingError
+from TBApython.exceptions import YearsParticipatedFormattingError
 
 class Team:
     """Model for team information from The Blue Alliance
@@ -112,7 +112,7 @@ class Team:
             None
 
         """
-        from TBA.event import Event
+        from TBApython.event import Event
 
         self.events.clear()
         if year is not None:
@@ -142,7 +142,7 @@ class Team:
             None
 
         """
-        from TBA.match import Match
+        from TBApython.match import Match
 
         self.matches.clear()
         get_matches_url = (API_URL + 'team/' + self.key + '/event/' + event_key
@@ -168,7 +168,7 @@ class Team:
             None
 
         """
-        from TBA.award import Award
+        from TBApython.award import Award
 
         self.awards.clear()
         if event_key is not None:

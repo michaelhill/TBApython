@@ -1,2 +1,2 @@
-# TBA-python
+# TBApython
 Python Implementation of The Blue Alliance API.
